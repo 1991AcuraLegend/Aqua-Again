@@ -2,3 +2,4 @@ aqua_inspo/
 .copilot-notes/aqua-hig-summary.md
 dist/
 node_modules/
+.DS_Store
