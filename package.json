@@ -1,0 +1,71 @@
+{
+  "name": "aqua-web-assets",
+  "version": "0.1.0",
+  "description": "Reusable Aqua-inspired CSS, React components, and UI assets for web projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1991AcuraLegend/Aqua-Again.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1991AcuraLegend/Aqua-Again/issues"
+  },
+  "homepage": "https://github.com/1991AcuraLegend/Aqua-Again#readme",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./dashboard-example": {
+      "types": "./dist/dashboard-example.d.ts",
+      "import": "./dist/dashboard-example.js"
+    },
+    "./styles.css": "./css/aqua-theme.css",
+    "./svg/*": "./svg/*",
+    "./png/*": "./png/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "css",
+    "svg",
+    "png",
+    "README.md",
+    "!png/showcase.png",
+    "!png/dashboard.png"
+  ],
+  "sideEffects": [
+    "./css/aqua-theme.css"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup --config tsup.config.ts",
+    "prepare": "npm run build",
+    "pack:dry-run": "npm pack --dry-run",
+    "publish:npm": "npm publish --access public"
+  },
+  "keywords": [
+    "aqua",
+    "macos",
+    "css",
+    "react",
+    "ui",
+    "components"
+  ],
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "tsup": "^8.3.5",
+    "typescript": "^5.8.2"
+  }
+}

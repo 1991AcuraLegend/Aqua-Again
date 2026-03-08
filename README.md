@@ -2,13 +2,72 @@
 
 Reusable web assets and component styles inspired by classic macOS Aqua, adjusted to follow the Leopard-era Human Interface Guidelines for window structure, spacing, control hierarchy, and chrome treatment.
 
+## Package Usage
+
+This repo is now set up as a reusable package so you can install it directly into other projects.
+
+### Install from this repo locally
+
+```bash
+npm install /absolute/path/to/Aqua-Again
+```
+
+### Or build and pack it first
+
+```bash
+npm install
+npm run build
+npm pack
+```
+
+Then install the generated tarball in another project.
+
+### Publish
+
+The package metadata is ready for npm publishing:
+
+```bash
+npm publish --access public
+```
+
+There is also a convenience script:
+
+```bash
+npm run publish:npm
+```
+
+For GitHub Packages, note that GitHub requires a scoped package name such as `@1991acuralegend/aqua-web-assets`. The current package is ready for npm as-is; if you want to publish to GitHub Packages too, rename the package to a scoped name first and then publish against the GitHub Packages registry.
+
+### Import in a React app
+
+```tsx
+import "aqua-web-assets/styles.css";
+import { AquaButton, AquaWindow, AquaSegmentedControl } from "aqua-web-assets";
+import { AquaDashboardExample } from "aqua-web-assets/dashboard-example";
+```
+
+### Import individual assets
+
+```ts
+import frameUrl from "aqua-web-assets/svg/window-frame.svg";
+import sourceListSelectionUrl from "aqua-web-assets/png/source-list-selection.png";
+```
+
+Package exports include:
+
+- `aqua-web-assets`: React primitives from `react/aqua-ui.tsx`
+- `aqua-web-assets/dashboard-example`: composed dashboard example
+- `aqua-web-assets/styles.css`: shared stylesheet
+- `aqua-web-assets/svg/*`: vector assets
+- `aqua-web-assets/png/*`: raster assets
+
 ## Sample Pages
 
 The repo includes two full-page examples that use the shared Aqua asset system.
 
 | Showcase | Dashboard |
 | --- | --- |
-| ![Showcase page screenshot](png/showcase.png) | ![Dashboard page screenshot](png/dashboard.png) |
+| ![Showcase page screenshot](https://raw.githubusercontent.com/1991AcuraLegend/Aqua-Again/main/png/showcase.png) | ![Dashboard page screenshot](https://raw.githubusercontent.com/1991AcuraLegend/Aqua-Again/main/png/dashboard.png) |
 | `html/showcase.html` is a component gallery and visual reference page. | `html/dashboard.html` is a fuller composition that demonstrates windows, sidebars, sheets, drawers, and data-heavy layouts. |
 
 ## Included Files
@@ -78,16 +137,18 @@ The CSS and React primitives cover more than the raw PNG and SVG exports. The sh
 
 ## Usage
 
-1. Open `html/showcase.html` in a browser for the gallery page.
-2. Open `html/dashboard.html` for the fuller reference composition.
-3. Copy classes from `css/aqua-theme.css` into your project or link the stylesheet directly.
-4. Import `react/aqua-ui.tsx` and `react/dashboard-example.tsx` for React or Next.js usage.
-5. Use the SVG files directly, or use the PNG previews where a raster asset is more convenient.
+1. Run `npm install` in this repo if you want to build or pack the package locally.
+2. Run `npm run build` to generate `dist/` output.
+3. Open `html/showcase.html` in a browser for the gallery page.
+4. Open `html/dashboard.html` for the fuller reference composition.
+5. Import `aqua-web-assets/styles.css` and the exported React primitives in your consuming project.
+6. Use the SVG and PNG package subpath exports when you want the raw assets directly.
 
 ## Notes
 
 - The current pass is aimed at Leopard-era Aqua hierarchy rather than older brushed-metal variants.
 - The design system emphasizes unified silver chrome, white content areas, blue source-list selections, and restrained Aqua gloss.
+- The package build outputs ESM modules and declaration files into `dist/`.
 - The CSS is self-contained and has no framework dependency.
 - The React files assume TypeScript and the modern JSX runtime, but do not depend on any component library.
-- Import `css/aqua-theme.css` globally from your app shell or layout when using the React and Next examples.
+- Import `aqua-web-assets/styles.css` globally from your app shell or layout when using the React and Next examples.
