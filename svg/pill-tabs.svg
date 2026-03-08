@@ -1,0 +1,17 @@
+<svg width="360" height="70" viewBox="0 0 360 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="14" width="352" height="42" rx="21" fill="url(#base)" stroke="#8096AA" stroke-opacity="0.36"/>
+  <rect x="10" y="18" width="106" height="34" rx="17" fill="url(#active)"/>
+  <text x="63" y="40" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="white">General</text>
+  <text x="175" y="40" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="#46627E">Sharing</text>
+  <text x="286" y="40" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="#46627E">Advanced</text>
+  <defs>
+    <linearGradient id="base" x1="180" y1="14" x2="180" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E3EDF6"/>
+      <stop offset="1" stop-color="#C3D4E5"/>
+    </linearGradient>
+    <linearGradient id="active" x1="63" y1="18" x2="63" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#94D6FF"/>
+      <stop offset="1" stop-color="#115FBE"/>
+    </linearGradient>
+  </defs>
+</svg>

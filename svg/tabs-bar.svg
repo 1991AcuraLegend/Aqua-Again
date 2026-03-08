@@ -1,0 +1,19 @@
+<svg width="420" height="86" viewBox="0 0 420 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tabsBase" x1="210" y1="10" x2="210" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E7EFF7"/>
+      <stop offset="1" stop-color="#BFD0E1"/>
+    </linearGradient>
+    <linearGradient id="tabActive" x1="141" y1="8" x2="141" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE9F6"/>
+    </linearGradient>
+  </defs>
+  <path d="M10 28C10 17.5066 18.5066 9 29 9H391C401.493 9 410 17.5066 410 28V76H10V28Z" fill="url(#tabsBase)" stroke="#8095AA" stroke-opacity="0.45"/>
+  <path d="M24 22C24 16.4772 28.4772 12 34 12H136C141.523 12 146 16.4772 146 22V67H24V22Z" fill="url(#tabActive)" stroke="#7F95AA" stroke-opacity="0.3"/>
+  <path d="M152 22C152 16.4772 156.477 12 162 12H264C269.523 12 274 16.4772 274 22V67H152V22Z" fill="#D1DEEB" fill-opacity="0.82" stroke="#8CA0B5" stroke-opacity="0.26"/>
+  <path d="M280 22C280 16.4772 284.477 12 290 12H392C397.523 12 402 16.4772 402 22V67H280V22Z" fill="#D1DEEB" fill-opacity="0.82" stroke="#8CA0B5" stroke-opacity="0.26"/>
+  <text x="85" y="45" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="18" font-weight="700" fill="#24415D">Overview</text>
+  <text x="213" y="45" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="18" font-weight="700" fill="#4C6783">Library</text>
+  <text x="341" y="45" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="18" font-weight="700" fill="#4C6783">Downloads</text>
+</svg>

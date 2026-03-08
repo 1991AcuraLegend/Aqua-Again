@@ -1,0 +1,23 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grayBase" x1="110" y1="4" x2="110" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#D7E1EB"/>
+      <stop offset="1" stop-color="#AAB9C8"/>
+    </linearGradient>
+    <linearGradient id="grayGloss" x1="110" y1="8" x2="110" y2="31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0.98"/>
+      <stop offset="0.72" stop-color="white" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadowGray" x="0" y="0" width="220" height="64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#536B85" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowGray)">
+    <rect x="4" y="5" width="212" height="52" rx="26" fill="url(#grayBase)" stroke="#7C90A4" stroke-opacity="0.65"/>
+    <rect x="7" y="8" width="206" height="24" rx="21" fill="url(#grayGloss)"/>
+    <rect x="7.5" y="8.5" width="205" height="48" rx="24" stroke="white" stroke-opacity="0.72"/>
+    <text x="110" y="38" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="20" font-weight="700" fill="#264460">Secondary</text>
+  </g>
+</svg>

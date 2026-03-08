@@ -1,0 +1,22 @@
+<svg width="320" height="48" viewBox="0 0 320 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="5" width="312" height="38" rx="12" fill="url(#selection)"/>
+  <rect x="4" y="5" width="312" height="18" rx="12" fill="url(#gloss)"/>
+  <circle cx="24" cy="24" r="6" fill="url(#dot)"/>
+  <text x="40" y="29" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="17" font-weight="700" fill="white">All Controls</text>
+  <text x="284" y="29" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="16" font-weight="700" fill="white">24</text>
+  <defs>
+    <linearGradient id="selection" x1="160" y1="5" x2="160" y2="43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FD2FF"/>
+      <stop offset="0.58" stop-color="#2F98F1"/>
+      <stop offset="1" stop-color="#115FBF"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="160" y1="5" x2="160" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="24" y1="18" x2="24" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D5EFFF"/>
+      <stop offset="1" stop-color="#57B3F5"/>
+    </linearGradient>
+  </defs>
+</svg>

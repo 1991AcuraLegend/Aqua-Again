@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aqua Dashboard Demo</title>
+    <link rel="stylesheet" href="../css/aqua-theme.css">
+  </head>
+  <body class="aqua-demo">
+    <main class="aqua-shell">
+      <article class="aqua-window">
+        <header class="aqua-titlebar">
+          <div class="traffic-lights" aria-hidden="true">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <div class="aqua-title">Aqua Control Center</div>
+        </header>
+
+        <div class="aqua-toolbar">
+          <div class="aqua-tabs" role="tablist" aria-label="Sections">
+            <button class="aqua-tab active">Overview</button>
+            <button class="aqua-tab">Library</button>
+            <button class="aqua-tab">Downloads</button>
+          </div>
+          <div class="aqua-search" style="margin-left:auto; width:min(260px, 100%)">
+            <input class="aqua-input" type="text" value="Search Aqua controls">
+          </div>
+        </div>
+
+        <div class="aqua-content">
+          <div class="aqua-sheet">
+            <p class="aqua-sheet-title">Save Changes to Aqua Library?</p>
+            <p class="aqua-caption">Attached sheets were a signature OS X interaction. This one drops from the titlebar with the same silver pinstripe treatment as the window chrome.</p>
+            <div class="aqua-sheet-actions">
+              <button class="aqua-button secondary">Cancel</button>
+              <button class="aqua-button">Save</button>
+            </div>
+          </div>
+
+          <div class="aqua-dashboard">
+            <aside class="aqua-stack">
+              <section class="aqua-card aqua-stack">
+                <div class="aqua-hero-card">
+                  <div class="aqua-orb" aria-hidden="true"></div>
+                  <div>
+                    <p class="aqua-section-title">Theme Kernel</p>
+                    <h1 class="aqua-display" style="font-size:42px; margin-bottom:8px;">Aqua OS</h1>
+                    <p class="aqua-caption">Classic web controls rebuilt as CSS, SVG, and React primitives.</p>
+                  </div>
+                </div>
+                <div class="aqua-inline">
+                  <a class="aqua-button" href="#">Download Kit</a>
+                  <a class="aqua-button secondary" href="#">Inspect Code</a>
+                </div>
+              </section>
+
+              <section class="aqua-card">
+                <p class="aqua-section-title">Source List</p>
+                <div class="aqua-source-list">
+                  <div class="aqua-source-item active"><span class="aqua-inline"><span class="aqua-source-dot"></span><strong>All Controls</strong></span><span>24</span></div>
+                  <div class="aqua-source-item"><span class="aqua-inline"><span class="aqua-source-dot"></span><strong>Windows</strong></span><span>4</span></div>
+                  <div class="aqua-source-item"><span class="aqua-inline"><span class="aqua-source-dot"></span><strong>Buttons</strong></span><span>12</span></div>
+                  <div class="aqua-source-item"><span class="aqua-inline"><span class="aqua-source-dot"></span><strong>Inputs</strong></span><span>8</span></div>
+                  <div class="aqua-source-item"><span class="aqua-inline"><span class="aqua-source-dot"></span><strong>Loaders</strong></span><span>3</span></div>
+                </div>
+              </section>
+
+              <section class="aqua-well aqua-stack">
+                <p class="aqua-section-title">Inputs</p>
+                <label class="aqua-checkbox"><span class="aqua-checkbox-box checked" aria-hidden="true"></span>Enable gel highlights</label>
+                <label class="aqua-checkbox"><span class="aqua-checkbox-box" aria-hidden="true"></span>Use striped chrome</label>
+                <div class="aqua-radio-group">
+                  <label class="aqua-radio"><span class="aqua-radio-dot selected" aria-hidden="true"></span>Blue gel selection</label>
+                  <label class="aqua-radio"><span class="aqua-radio-dot" aria-hidden="true"></span>Silver bevel selection</label>
+                </div>
+                <div class="aqua-combobox-wrap">
+                  <select class="aqua-combobox" aria-label="Texture preset">
+                    <option>Panther pinstripe</option>
+                    <option>Jaguar gloss</option>
+                    <option>Brushed metal</option>
+                  </select>
+                </div>
+                <div class="aqua-slider" aria-hidden="true">
+                  <div class="aqua-slider-track"></div>
+                  <div class="aqua-slider-fill"></div>
+                  <div class="aqua-slider-thumb"></div>
+                </div>
+              </section>
+            </aside>
+
+            <section class="aqua-stack">
+              <div class="aqua-stat-grid">
+                <div class="aqua-stat">
+                  <p class="aqua-stat-label">Components</p>
+                  <p class="aqua-stat-value">24</p>
+                  <p class="aqua-caption">Reusable pieces in the current pack.</p>
+                </div>
+                <div class="aqua-stat">
+                  <p class="aqua-stat-label">Formats</p>
+                  <p class="aqua-stat-value">4</p>
+                  <p class="aqua-caption">CSS, HTML, SVG, and PNG exports.</p>
+                </div>
+                <div class="aqua-stat">
+                  <p class="aqua-stat-label">Theme Score</p>
+                  <p class="aqua-stat-value">98</p>
+                  <p class="aqua-caption">Aggressive gloss, stripes, and blue depth.</p>
+                </div>
+                <div class="aqua-stat">
+                  <p class="aqua-stat-label">Status</p>
+                  <p class="aqua-stat-value">OK</p>
+                  <div class="aqua-inline">
+                    <div class="aqua-spinner" aria-hidden="true"></div>
+                    <p class="aqua-caption" style="margin:0;">Rendering previews</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="aqua-panel-grid">
+                <section class="aqua-card aqua-stack">
+                  <div>
+                    <p class="aqua-section-title">Control Gallery</p>
+                    <p class="aqua-caption">The same classes can be used directly in production markup or wrapped in framework components. This pass pushes closer to Panther-era Aqua with stronger chrome and period-native controls.</p>
+                  </div>
+
+                  <div class="aqua-inline">
+                    <button class="aqua-button">Primary</button>
+                    <button class="aqua-button secondary">Secondary</button>
+                    <div class="aqua-segmented">
+                      <button class="aqua-segment">Left</button>
+                      <button class="aqua-segment active">Center</button>
+                      <button class="aqua-segment">Right</button>
+                    </div>
+                  </div>
+
+                  <div class="aqua-tabs" role="tablist" aria-label="Examples">
+                    <button class="aqua-tab active">Aqua Tab</button>
+                    <button class="aqua-tab">Another</button>
+                    <button class="aqua-tab">Utilities</button>
+                  </div>
+
+                  <div class="aqua-pill-tabs" role="tablist" aria-label="Pill tabs">
+                    <button class="aqua-pill-tab active">General</button>
+                    <button class="aqua-pill-tab">Sharing</button>
+                    <button class="aqua-pill-tab">Advanced</button>
+                  </div>
+
+                  <div class="aqua-detail-grid">
+                    <div class="aqua-stack">
+                      <div class="aqua-indeterminate" aria-hidden="true"></div>
+                      <div class="aqua-note aqua-brushed">
+                        <strong>Indeterminate progress</strong>
+                        <p class="aqua-caption">Uses a barber-pole fill closer to classic Aqua installer and copy dialogs.</p>
+                      </div>
+                    </div>
+                    <div class="aqua-scrollbar" aria-hidden="true">
+                      <div class="aqua-scrollbar-thumb"></div>
+                    </div>
+                  </div>
+
+                  <div class="aqua-note">
+                    <div class="aqua-inline" style="justify-content:space-between; align-items:flex-start;">
+                      <div>
+                        <strong>Window shell package</strong>
+                        <p class="aqua-caption">Includes chrome, pinstripe tile, traffic lights, toolbar, cards, and shell surfaces.</p>
+                      </div>
+                      <span class="aqua-badge">Recommended</span>
+                    </div>
+                    <div class="aqua-meter"><span style="width:74%;"></span></div>
+                  </div>
+                </section>
+
+                <section class="aqua-card aqua-stack">
+                  <p class="aqua-section-title">Authenticity Notes</p>
+                  <div class="aqua-list">
+                    <div class="aqua-row"><strong>Smaller title text and denser titlebar</strong><span class="aqua-badge">matched</span></div>
+                    <div class="aqua-row"><strong>Pinstriped silver chrome with strong gloss cuts</strong><span class="aqua-badge">matched</span></div>
+                    <div class="aqua-row"><strong>Source list, combo, radio, barber-pole progress, scrollbar</strong><span class="aqua-badge">added</span></div>
+                    <div class="aqua-row"><strong>Attached sheet, brushed drawer, pill tabs, progress dialog</strong><span class="aqua-badge">added</span></div>
+                  </div>
+                </section>
+              </div>
+
+              <section class="aqua-card aqua-stack">
+                <p class="aqua-section-title">Window Furniture</p>
+                <div class="aqua-window-split">
+                  <div class="aqua-drawer">
+                    <div class="aqua-drawer-handle" aria-hidden="true"></div>
+                    <p class="aqua-section-title">Drawer</p>
+                    <div class="aqua-list">
+                      <div class="aqua-row"><strong>Quick Find</strong><span class="aqua-badge">/</span></div>
+                      <div class="aqua-row"><strong>Bookmark Shelf</strong><span class="aqua-badge">12</span></div>
+                      <div class="aqua-row"><strong>Inspector</strong><span class="aqua-badge">live</span></div>
+                    </div>
+                  </div>
+                  <div class="aqua-stack">
+                    <div class="aqua-progress-dialog">
+                      <div class="aqua-progress-dialog-header">
+                        <p class="aqua-progress-dialog-title">Copying Aqua Assets…</p>
+                        <span class="aqua-badge">41%</span>
+                      </div>
+                      <div class="aqua-indeterminate" aria-hidden="true"></div>
+                      <p class="aqua-caption" style="margin-top:10px;">Striped progress dialogs were common throughout classic Aqua workflows.</p>
+                    </div>
+                    <div class="aqua-window-preview">
+                      <div class="aqua-toolbar aqua-brushed">
+                        <div class="aqua-pill-tabs" role="tablist" aria-label="Drawer tabs">
+                          <button class="aqua-pill-tab active">Fonts</button>
+                          <button class="aqua-pill-tab">Colors</button>
+                          <button class="aqua-pill-tab">Metrics</button>
+                        </div>
+                      </div>
+                      <div class="aqua-content">
+                        <p class="aqua-caption">Pill tabs and drawers help recreate the utility-window feel found in many Panther-era apps.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="aqua-card">
+                <p class="aqua-section-title">Asset Matrix</p>
+                <table class="aqua-table">
+                  <thead>
+                    <tr>
+                      <th>Asset</th>
+                      <th>Format</th>
+                      <th>Primary Use</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Window frame</td>
+                      <td>SVG, PNG</td>
+                      <td>Hero shells, sheets, drawers, and mockups</td>
+                      <td><span class="aqua-badge">ready</span></td>
+                    </tr>
+                    <tr>
+                      <td>Controls</td>
+                      <td>CSS, React</td>
+                      <td>Buttons, tabs, pill tabs, checkbox, radio, combo, slider</td>
+                      <td><span class="aqua-badge">ready</span></td>
+                    </tr>
+                    <tr>
+                      <td>Loading states</td>
+                      <td>SVG, CSS</td>
+                      <td>Spinner, determinate bar, indeterminate barber-pole</td>
+                      <td><span class="aqua-badge">ready</span></td>
+                    </tr>
+                    <tr>
+                      <td>Window furniture</td>
+                      <td>CSS, SVG</td>
+                      <td>Attached sheet, brushed drawer, utility progress dialog</td>
+                      <td><span class="aqua-badge">ready</span></td>
+                    </tr>
+                    <tr>
+                      <td>Dashboard demo</td>
+                      <td>HTML</td>
+                      <td>Full-page composition reference</td>
+                      <td><span class="aqua-badge">ready</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+  </html>

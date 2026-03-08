@@ -1,0 +1,74 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chrome" x1="600" y1="24" x2="600" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.58" stop-color="#CBD9E7"/>
+      <stop offset="1" stop-color="#A7BBCE"/>
+    </linearGradient>
+    <linearGradient id="content" x1="600" y1="98" x2="600" y2="780" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FCFEFF"/>
+      <stop offset="1" stop-color="#DAE7F2"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="600" y1="28" x2="600" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0.94"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="windowShadow" x="0" y="0" width="1200" height="820" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#27476E" flood-opacity="0.28"/>
+    </filter>
+    <radialGradient id="redLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(84 50) rotate(90) scale(14)">
+      <stop offset="0" stop-color="#FFD4D0"/>
+      <stop offset="0.62" stop-color="#FF5F57"/>
+      <stop offset="1" stop-color="#BD302A"/>
+    </radialGradient>
+    <radialGradient id="yellowLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(118 50) rotate(90) scale(14)">
+      <stop offset="0" stop-color="#FFF0B4"/>
+      <stop offset="0.62" stop-color="#FEBC2E"/>
+      <stop offset="1" stop-color="#B77600"/>
+    </radialGradient>
+    <radialGradient id="greenLight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(152 50) rotate(90) scale(14)">
+      <stop offset="0" stop-color="#D5FFD9"/>
+      <stop offset="0.62" stop-color="#28C840"/>
+      <stop offset="1" stop-color="#148829"/>
+    </radialGradient>
+  </defs>
+  <g filter="url(#windowShadow)">
+    <rect x="24" y="24" width="1152" height="772" rx="28" fill="url(#content)" stroke="#6E89A4" stroke-opacity="0.45"/>
+    <path d="M24 52C24 36.536 36.536 24 52 24H1148C1163.46 24 1176 36.536 1176 52V102H24V52Z" fill="url(#chrome)"/>
+    <path d="M24 52C24 36.536 36.536 24 52 24H1148C1163.46 24 1176 36.536 1176 52V102H24V52Z" fill="url(#gloss)"/>
+    <path d="M24 102H1176" stroke="#758EA7" stroke-opacity="0.4"/>
+    <g opacity="0.34">
+      <path d="M24 46H1176" stroke="white"/>
+      <path d="M24 50H1176" stroke="#A9BDD0"/>
+      <path d="M24 54H1176" stroke="white"/>
+      <path d="M24 58H1176" stroke="#A9BDD0"/>
+      <path d="M24 62H1176" stroke="white"/>
+      <path d="M24 66H1176" stroke="#A9BDD0"/>
+      <path d="M24 70H1176" stroke="white"/>
+    </g>
+    <circle cx="86" cy="50" r="14" fill="url(#redLight)" stroke="black" stroke-opacity="0.18"/>
+    <circle cx="124" cy="50" r="14" fill="url(#yellowLight)" stroke="black" stroke-opacity="0.18"/>
+    <circle cx="162" cy="50" r="14" fill="url(#greenLight)" stroke="black" stroke-opacity="0.18"/>
+    <ellipse cx="81" cy="44" rx="5.5" ry="3.2" fill="white" fill-opacity="0.55"/>
+    <ellipse cx="119" cy="44" rx="5.5" ry="3.2" fill="white" fill-opacity="0.55"/>
+    <ellipse cx="157" cy="44" rx="5.5" ry="3.2" fill="white" fill-opacity="0.55"/>
+    <text x="600" y="58" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="18" font-weight="700" fill="#32516E">Aqua Window</text>
+
+    <rect x="52" y="132" width="1096" height="58" rx="22" fill="white" fill-opacity="0.42"/>
+    <rect x="70" y="149" width="114" height="26" rx="13" fill="#EEF4F9" stroke="#7D93A7" stroke-opacity="0.4"/>
+    <rect x="190" y="149" width="114" height="26" rx="13" fill="#EEF4F9" stroke="#7D93A7" stroke-opacity="0.4"/>
+    <rect x="340" y="144" width="520" height="36" rx="18" fill="#FFFFFF" fill-opacity="0.86" stroke="#7D93A7" stroke-opacity="0.3"/>
+    <rect x="902" y="144" width="210" height="36" rx="18" fill="#E5EEF7" stroke="#7D93A7" stroke-opacity="0.3"/>
+
+    <rect x="52" y="216" width="314" height="536" rx="24" fill="white" fill-opacity="0.38"/>
+    <rect x="386" y="216" width="762" height="536" rx="24" fill="white" fill-opacity="0.48"/>
+    <rect x="74" y="244" width="270" height="74" rx="18" fill="white" fill-opacity="0.62"/>
+    <rect x="74" y="334" width="270" height="74" rx="18" fill="#DFF0FF" fill-opacity="0.92"/>
+    <rect x="74" y="424" width="270" height="74" rx="18" fill="white" fill-opacity="0.62"/>
+    <rect x="74" y="514" width="270" height="74" rx="18" fill="white" fill-opacity="0.62"/>
+
+    <rect x="420" y="250" width="694" height="120" rx="26" fill="white" fill-opacity="0.58"/>
+    <rect x="420" y="390" width="694" height="136" rx="26" fill="white" fill-opacity="0.48"/>
+    <rect x="420" y="546" width="694" height="168" rx="26" fill="white" fill-opacity="0.54"/>
+  </g>
+</svg>

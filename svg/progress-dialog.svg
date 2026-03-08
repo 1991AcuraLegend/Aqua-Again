@@ -1,0 +1,45 @@
+<svg width="460" height="220" viewBox="0 0 460 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="18" width="424" height="184" rx="22" fill="url(#dialog)" stroke="#7F95AA" stroke-opacity="0.34"/>
+  <text x="44" y="62" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="20" font-weight="700" fill="#26425D">Copying Aqua Assets…</text>
+  <rect x="360" y="38" width="56" height="24" rx="12" fill="url(#badge)"/>
+  <text x="388" y="54" text-anchor="middle" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="14" font-weight="700" fill="#1F446E">41%</text>
+  <rect x="42" y="94" width="376" height="24" rx="12" fill="url(#track)"/>
+  <rect x="44" y="96" width="372" height="20" rx="10" fill="url(#fill)"/>
+  <mask id="bar" maskUnits="userSpaceOnUse" x="44" y="96" width="372" height="20">
+    <rect x="44" y="96" width="372" height="20" rx="10" fill="white"/>
+  </mask>
+  <g mask="url(#bar)" opacity="0.45">
+    <path d="M24 116L52 96H74L46 116H24Z" fill="white"/>
+    <path d="M52 116L80 96H102L74 116H52Z" fill="#8DD6FF"/>
+    <path d="M80 116L108 96H130L102 116H80Z" fill="white"/>
+    <path d="M108 116L136 96H158L130 116H108Z" fill="#8DD6FF"/>
+    <path d="M136 116L164 96H186L158 116H136Z" fill="white"/>
+    <path d="M164 116L192 96H214L186 116H164Z" fill="#8DD6FF"/>
+    <path d="M192 116L220 96H242L214 116H192Z" fill="white"/>
+    <path d="M220 116L248 96H270L242 116H220Z" fill="#8DD6FF"/>
+    <path d="M248 116L276 96H298L270 116H248Z" fill="white"/>
+    <path d="M276 116L304 96H326L298 116H276Z" fill="#8DD6FF"/>
+    <path d="M304 116L332 96H354L326 116H304Z" fill="white"/>
+    <path d="M332 116L360 96H382L354 116H332Z" fill="#8DD6FF"/>
+    <path d="M360 116L388 96H410L382 116H360Z" fill="white"/>
+  </g>
+  <text x="44" y="150" font-family="Lucida Grande, Trebuchet MS, sans-serif" font-size="14" fill="#53708D">Striped progress dialogs were common throughout classic Aqua workflows.</text>
+  <defs>
+    <linearGradient id="dialog" x1="230" y1="18" x2="230" y2="202" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDE8F3"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="388" y1="38" x2="388" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D0E0EF"/>
+    </linearGradient>
+    <linearGradient id="track" x1="230" y1="94" x2="230" y2="118" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B7C9DC"/>
+      <stop offset="1" stop-color="#F0F7FD"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="230" y1="96" x2="230" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8CD7FF"/>
+      <stop offset="1" stop-color="#1463C4"/>
+    </linearGradient>
+  </defs>
+</svg>

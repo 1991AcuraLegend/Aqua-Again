@@ -1,0 +1,32 @@
+<svg width="340" height="42" viewBox="0 0 340 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="10" width="332" height="22" rx="11" fill="url(#track)"/>
+  <rect x="6" y="12" width="328" height="18" rx="9" fill="url(#fill)"/>
+  <mask id="m" maskUnits="userSpaceOnUse" x="6" y="12" width="328" height="18">
+    <rect x="6" y="12" width="328" height="18" rx="9" fill="white"/>
+  </mask>
+  <g mask="url(#m)" opacity="0.5">
+    <path d="M-10 30L18 12H38L10 30H-10Z" fill="white"/>
+    <path d="M18 30L46 12H66L38 30H18Z" fill="#8DD6FF"/>
+    <path d="M46 30L74 12H94L66 30H46Z" fill="white"/>
+    <path d="M74 30L102 12H122L94 30H74Z" fill="#8DD6FF"/>
+    <path d="M102 30L130 12H150L122 30H102Z" fill="white"/>
+    <path d="M130 30L158 12H178L150 30H130Z" fill="#8DD6FF"/>
+    <path d="M158 30L186 12H206L178 30H158Z" fill="white"/>
+    <path d="M186 30L214 12H234L206 30H186Z" fill="#8DD6FF"/>
+    <path d="M214 30L242 12H262L234 30H214Z" fill="white"/>
+    <path d="M242 30L270 12H290L262 30H242Z" fill="#8DD6FF"/>
+    <path d="M270 30L298 12H318L290 30H270Z" fill="white"/>
+    <path d="M298 30L326 12H346L318 30H298Z" fill="#8DD6FF"/>
+  </g>
+  <defs>
+    <linearGradient id="track" x1="170" y1="10" x2="170" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B7C9DC"/>
+      <stop offset="1" stop-color="#F0F7FD"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="170" y1="12" x2="170" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8CD7FF"/>
+      <stop offset="0.56" stop-color="#3CA1F2"/>
+      <stop offset="1" stop-color="#1463C4"/>
+    </linearGradient>
+  </defs>
+</svg>

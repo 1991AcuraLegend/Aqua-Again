@@ -1,0 +1,19 @@
+<svg width="40" height="180" viewBox="0 0 40 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="12" y="6" width="16" height="168" rx="8" fill="url(#track)" stroke="#8096AA" stroke-opacity="0.28"/>
+  <rect x="12" y="42" width="16" height="72" rx="8" fill="url(#thumb)" stroke="#8A9FB4" stroke-opacity="0.42"/>
+  <rect x="13" y="43" width="14" height="24" rx="7" fill="url(#gloss)"/>
+  <defs>
+    <linearGradient id="track" x1="20" y1="6" x2="20" y2="174" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E2ECF6"/>
+      <stop offset="1" stop-color="#C4D3E2"/>
+    </linearGradient>
+    <linearGradient id="thumb" x1="20" y1="42" x2="20" y2="114" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FEFEFE"/>
+      <stop offset="1" stop-color="#B0C1D2"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="20" y1="43" x2="20" y2="67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0.84"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

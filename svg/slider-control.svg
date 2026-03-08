@@ -1,0 +1,21 @@
+<svg width="360" height="70" viewBox="0 0 360 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="track" x1="180" y1="24" x2="180" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B7C9DC"/>
+      <stop offset="1" stop-color="#F0F7FD"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="102" y1="26" x2="102" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8DD6FF"/>
+      <stop offset="0.58" stop-color="#3A9FF2"/>
+      <stop offset="1" stop-color="#1562C3"/>
+    </linearGradient>
+    <linearGradient id="thumb" x1="208" y1="8" x2="208" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#B7C7D7"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="28" width="340" height="14" rx="7" fill="url(#track)"/>
+  <rect x="12" y="30" width="196" height="10" rx="5" fill="url(#fill)"/>
+  <circle cx="208" cy="35" r="18" fill="url(#thumb)" stroke="#7E95AA" stroke-opacity="0.42"/>
+  <circle cx="203" cy="29" r="8" fill="white" fill-opacity="0.55"/>
+</svg>
