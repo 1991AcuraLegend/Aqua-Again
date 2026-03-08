@@ -19,12 +19,12 @@
         </header>
 
         <div class="aqua-toolbar">
-          <div class="aqua-tabs" role="tablist" aria-label="Sections">
-            <button class="aqua-tab active">Overview</button>
-            <button class="aqua-tab">Library</button>
-            <button class="aqua-tab">Downloads</button>
+          <div class="aqua-segmented" role="tablist" aria-label="Sections">
+            <button class="aqua-segment active">Overview</button>
+            <button class="aqua-segment">Library</button>
+            <button class="aqua-segment">Downloads</button>
           </div>
-          <div class="aqua-search" style="margin-left:auto; width:min(260px, 100%)">
+          <div class="aqua-search aqua-toolbar-search">
             <input class="aqua-input" type="text" value="Search Aqua controls">
           </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="aqua-content">
           <div class="aqua-sheet">
             <p class="aqua-sheet-title">Save Changes to Aqua Library?</p>
-            <p class="aqua-caption">Attached sheets were a signature OS X interaction. This one drops from the titlebar with the same silver pinstripe treatment as the window chrome.</p>
+            <p class="aqua-caption">Attached sheets remain anchored to the title bar and reuse the same neutral frame surface as the window chrome.</p>
             <div class="aqua-sheet-actions">
               <button class="aqua-button secondary">Cancel</button>
               <button class="aqua-button">Save</button>
@@ -46,8 +46,8 @@
                   <div class="aqua-orb" aria-hidden="true"></div>
                   <div>
                     <p class="aqua-section-title">Theme Kernel</p>
-                    <h1 class="aqua-display" style="font-size:42px; margin-bottom:8px;">Aqua OS</h1>
-                    <p class="aqua-caption">Classic web controls rebuilt as CSS, SVG, and React primitives.</p>
+                    <h1 class="aqua-display aqua-display-hero">Aqua OS</h1>
+                    <p class="aqua-caption">Aqua controls rebuilt as CSS, SVG, and React primitives with unified chrome and regular control spacing.</p>
                   </div>
                 </div>
                 <div class="aqua-inline">
@@ -77,9 +77,9 @@
                 </div>
                 <div class="aqua-combobox-wrap">
                   <select class="aqua-combobox" aria-label="Texture preset">
-                    <option>Panther pinstripe</option>
-                    <option>Jaguar gloss</option>
-                    <option>Brushed metal</option>
+                    <option>Unified chrome</option>
+                    <option>Blue source list</option>
+                    <option>Utility drawer</option>
                   </select>
                 </div>
                 <div class="aqua-slider" aria-hidden="true">
@@ -105,14 +105,14 @@
                 <div class="aqua-stat">
                   <p class="aqua-stat-label">Theme Score</p>
                   <p class="aqua-stat-value">98</p>
-                  <p class="aqua-caption">Aggressive gloss, stripes, and blue depth.</p>
+                  <p class="aqua-caption">Balanced chrome, white content, and blue selection accents.</p>
                 </div>
                 <div class="aqua-stat">
                   <p class="aqua-stat-label">Status</p>
                   <p class="aqua-stat-value">OK</p>
                   <div class="aqua-inline">
                     <div class="aqua-spinner" aria-hidden="true"></div>
-                    <p class="aqua-caption" style="margin:0;">Rendering previews</p>
+                    <p class="aqua-caption aqua-caption-tight">Rendering previews</p>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                 <section class="aqua-card aqua-stack">
                   <div>
                     <p class="aqua-section-title">Control Gallery</p>
-                    <p class="aqua-caption">The same classes can be used directly in production markup or wrapped in framework components. This pass pushes closer to Panther-era Aqua with stronger chrome and period-native controls.</p>
+                    <p class="aqua-caption">The same classes can be used directly in production markup or wrapped in framework components while keeping the Aqua hierarchy centered on neutral chrome and disciplined spacing.</p>
                   </div>
 
                   <div class="aqua-inline">
@@ -140,7 +140,7 @@
                     <button class="aqua-tab">Utilities</button>
                   </div>
 
-                  <div class="aqua-pill-tabs" role="tablist" aria-label="Pill tabs">
+                  <div class="aqua-pill-tabs" role="tablist" aria-label="Scope filters">
                     <button class="aqua-pill-tab active">General</button>
                     <button class="aqua-pill-tab">Sharing</button>
                     <button class="aqua-pill-tab">Advanced</button>
@@ -149,9 +149,9 @@
                   <div class="aqua-detail-grid">
                     <div class="aqua-stack">
                       <div class="aqua-indeterminate" aria-hidden="true"></div>
-                      <div class="aqua-note aqua-brushed">
+                      <div class="aqua-note aqua-frame-surface">
                         <strong>Indeterminate progress</strong>
-                        <p class="aqua-caption">Uses a barber-pole fill closer to classic Aqua installer and copy dialogs.</p>
+                        <p class="aqua-caption">Uses a barber-pole fill for utility progress states without changing the underlying control hierarchy.</p>
                       </div>
                     </div>
                     <div class="aqua-scrollbar" aria-hidden="true">
@@ -160,7 +160,7 @@
                   </div>
 
                   <div class="aqua-note">
-                    <div class="aqua-inline" style="justify-content:space-between; align-items:flex-start;">
+                    <div class="aqua-inline aqua-note-header">
                       <div>
                         <strong>Window shell package</strong>
                         <p class="aqua-caption">Includes chrome, pinstripe tile, traffic lights, toolbar, cards, and shell surfaces.</p>
@@ -177,7 +177,7 @@
                     <div class="aqua-row"><strong>Smaller title text and denser titlebar</strong><span class="aqua-badge">matched</span></div>
                     <div class="aqua-row"><strong>Pinstriped silver chrome with strong gloss cuts</strong><span class="aqua-badge">matched</span></div>
                     <div class="aqua-row"><strong>Source list, combo, radio, barber-pole progress, scrollbar</strong><span class="aqua-badge">added</span></div>
-                    <div class="aqua-row"><strong>Attached sheet, brushed drawer, pill tabs, progress dialog</strong><span class="aqua-badge">added</span></div>
+                    <div class="aqua-row"><strong>Attached sheet, utility drawer, scope filters, progress dialog</strong><span class="aqua-badge">added</span></div>
                   </div>
                 </section>
               </div>
@@ -201,18 +201,18 @@
                         <span class="aqua-badge">41%</span>
                       </div>
                       <div class="aqua-indeterminate" aria-hidden="true"></div>
-                      <p class="aqua-caption" style="margin-top:10px;">Striped progress dialogs were common throughout classic Aqua workflows.</p>
+                      <p class="aqua-caption aqua-progress-caption">Utility progress dialogs fit the Aqua model when the chrome stays subdued and the task state is explicit.</p>
                     </div>
                     <div class="aqua-window-preview">
-                      <div class="aqua-toolbar aqua-brushed">
-                        <div class="aqua-pill-tabs" role="tablist" aria-label="Drawer tabs">
-                          <button class="aqua-pill-tab active">Fonts</button>
-                          <button class="aqua-pill-tab">Colors</button>
-                          <button class="aqua-pill-tab">Metrics</button>
+                      <div class="aqua-toolbar">
+                        <div class="aqua-segmented" role="tablist" aria-label="Drawer modes">
+                          <button class="aqua-segment active">Fonts</button>
+                          <button class="aqua-segment">Colors</button>
+                          <button class="aqua-segment">Metrics</button>
                         </div>
                       </div>
                       <div class="aqua-content">
-                        <p class="aqua-caption">Pill tabs and drawers help recreate the utility-window feel found in many Panther-era apps.</p>
+                        <p class="aqua-caption">Segmented controls and a utility drawer keep the supporting window furniture closer to the HIG than older decorative utility-window treatments.</p>
                       </div>
                     </div>
                   </div>
@@ -252,7 +252,7 @@
                     <tr>
                       <td>Window furniture</td>
                       <td>CSS, SVG</td>
-                      <td>Attached sheet, brushed drawer, utility progress dialog</td>
+                      <td>Attached sheet, utility drawer, utility progress dialog</td>
                       <td><span class="aqua-badge">ready</span></td>
                     </tr>
                     <tr>

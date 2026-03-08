@@ -28,8 +28,8 @@ export function AquaDashboardExample() {
         title="Aqua Control Center"
         toolbar={
           <>
-            <AquaTabs items={["Overview", "Library", "Downloads"]} active="Overview" />
-            <div style={{ marginLeft: "auto", width: "min(260px, 100%)" }}>
+            <AquaSegmentedControl items={["Overview", "Library", "Downloads"]} active="Overview" />
+            <div className="aqua-toolbar-search">
               <AquaSearchField defaultValue="Search Aqua controls" />
             </div>
           </>
@@ -44,7 +44,7 @@ export function AquaDashboardExample() {
             </>
           }
         >
-          <p className="aqua-caption">Attached sheets were a signature OS X interaction. This one drops from the titlebar with the same silver pinstripe treatment as the window chrome.</p>
+          <p className="aqua-caption">Attached sheets remain anchored to the title bar and reuse the same neutral frame surface as the window chrome.</p>
         </AquaSheet>
 
         <div className="aqua-dashboard">
@@ -54,8 +54,8 @@ export function AquaDashboardExample() {
                 <div className="aqua-orb" aria-hidden="true" />
                 <div>
                   <p className="aqua-section-title">Theme Kernel</p>
-                  <h1 className="aqua-display" style={{ fontSize: 42, marginBottom: 8 }}>Aqua OS</h1>
-                  <p className="aqua-caption">Classic web controls rebuilt as CSS, SVG, and React primitives.</p>
+                  <h1 className="aqua-display aqua-display-hero">Aqua OS</h1>
+                  <p className="aqua-caption">Aqua controls rebuilt as CSS, SVG, and React primitives with unified chrome and regular control spacing.</p>
                 </div>
               </div>
               <div className="aqua-inline">
@@ -88,10 +88,10 @@ export function AquaDashboardExample() {
                 <AquaCheckbox>Use striped chrome</AquaCheckbox>
                 <AquaRadio selected>Blue gel selection</AquaRadio>
                 <AquaRadio>Silver bevel selection</AquaRadio>
-                <AquaCombobox defaultValue="Panther pinstripe">
-                  <option>Panther pinstripe</option>
-                  <option>Jaguar gloss</option>
-                  <option>Brushed metal</option>
+                <AquaCombobox defaultValue="Unified chrome">
+                  <option>Unified chrome</option>
+                  <option>Blue source list</option>
+                  <option>Utility drawer</option>
                 </AquaCombobox>
                 <AquaSlider value={62} />
                 <AquaProgress value={74} />
@@ -104,13 +104,13 @@ export function AquaDashboardExample() {
               {[
                 ["Components", "24", "Reusable pieces in the current pack."],
                 ["Formats", "4", "CSS, HTML, SVG, and PNG exports."],
-                ["Theme Score", "98", "Aggressive gloss, stripes, and blue depth."],
+                ["Theme Score", "98", "Balanced chrome, white content, and blue selection accents."],
                 ["Status", "OK", "Rendering previews."],
               ].map(([label, value, detail]) => (
                 <div className="aqua-stat" key={label}>
                   <p className="aqua-stat-label">{label}</p>
                   <p className="aqua-stat-value">{value}</p>
-                  <p className="aqua-caption" style={{ marginBottom: 0 }}>{detail}</p>
+                  <p className="aqua-caption aqua-caption-tight">{detail}</p>
                 </div>
               ))}
             </div>
@@ -119,7 +119,7 @@ export function AquaDashboardExample() {
               <AquaCard className="aqua-stack">
                 <div>
                   <p className="aqua-section-title">Control Gallery</p>
-                  <p className="aqua-caption">Use the same CSS classes directly or wrap them with framework components.</p>
+                  <p className="aqua-caption">Use the same CSS classes directly or wrap them with framework components while keeping the Aqua hierarchy centered on neutral chrome and disciplined spacing.</p>
                 </div>
                 <div className="aqua-inline">
                   <AquaButton>Primary</AquaButton>
@@ -132,9 +132,9 @@ export function AquaDashboardExample() {
                 <div className="aqua-detail-grid">
                   <div className="aqua-stack">
                     <AquaIndeterminateProgress />
-                    <div className="aqua-note aqua-brushed">
+                    <div className="aqua-note aqua-frame-surface">
                       <strong>Indeterminate progress</strong>
-                      <p className="aqua-caption">Barber-pole fill closer to classic Aqua installer and copy dialogs.</p>
+                      <p className="aqua-caption">Barber-pole fill for utility progress states without changing the underlying control hierarchy.</p>
                     </div>
                   </div>
                   <AquaScrollbar />
@@ -152,7 +152,7 @@ export function AquaDashboardExample() {
                   <div className="aqua-row"><strong>Smaller title text and denser titlebar</strong><AquaBadge>matched</AquaBadge></div>
                   <div className="aqua-row"><strong>Pinstriped silver chrome with strong gloss cuts</strong><AquaBadge>matched</AquaBadge></div>
                   <div className="aqua-row"><strong>Source list, combo, radio, barber-pole progress, scrollbar</strong><AquaBadge>added</AquaBadge></div>
-                  <div className="aqua-row"><strong>Attached sheet, brushed drawer, pill tabs, progress dialog</strong><AquaBadge>added</AquaBadge></div>
+                  <div className="aqua-row"><strong>Attached sheet, utility drawer, scope filters, progress dialog</strong><AquaBadge>added</AquaBadge></div>
                 </div>
               </AquaCard>
             </div>
@@ -171,11 +171,11 @@ export function AquaDashboardExample() {
                 <div className="aqua-stack">
                   <AquaProgressDialog title="Copying Aqua Assets…" status="41%" />
                   <div className="aqua-window-preview">
-                    <div className="aqua-toolbar aqua-brushed">
-                      <AquaPillTabs items={["Fonts", "Colors", "Metrics"]} active="Fonts" />
+                    <div className="aqua-toolbar">
+                      <AquaSegmentedControl items={["Fonts", "Colors", "Metrics"]} active="Fonts" />
                     </div>
                     <div className="aqua-content">
-                      <p className="aqua-caption">Pill tabs and drawers help recreate the utility-window feel found in many Panther-era apps.</p>
+                      <p className="aqua-caption">Segmented controls and a utility drawer keep the supporting window furniture closer to the HIG than older decorative utility-window treatments.</p>
                     </div>
                   </div>
                 </div>
